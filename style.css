@@ -1,0 +1,123 @@
+:root {
+   --mainBG: hsl(217, 54%, 11%);
+   --cardBG: hsl(216, 50%, 16%);
+   --line: hsl(215, 32%, 27%);
+   --White: hsl(0, 0%, 100%);
+   --Softblue: hsl(215, 51%, 70%);
+   --Cyan: hsl(178, 100%, 50%);
+}
+*,
+*::after,
+*::before {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+html {
+   height: 100%;
+}
+body {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100%;
+   background: var(--mainBG);
+   font-family: 'Hanken Grotesk', sans-serif;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 1.6em;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-weight: 700;
+   display: inline-block;
+}
+p {
+   font-weight: 400;
+   display: inline-block;
+}
+#container {
+   background: var(--cardBG);
+   padding: 2rem;
+   width: 29rem;
+   height: auto;
+   border-radius: 1rem;
+}
+.Equilibrium {
+   width: 100%;
+   border-radius: 0.7rem;
+   position: relative;
+}
+.image {
+   position: relative;
+}
+.image div {
+   position: absolute;
+   background-color: hsl(178, 100%, 50%, 60%);
+   top: 0;
+   width: 100%;
+   height: 98%;
+   opacity: 0;
+   border-radius: 1rem;
+}
+.image div:hover {
+   opacity: 1;
+   transition: 0.3s;
+   cursor: pointer;
+}
+.image div img {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+.content h1 {
+   color: var(--White);
+   font-size: 1.5rem;
+   padding: 1.5rem 0;
+}
+.content .details {
+   color: var(--Softblue);
+   opacity: 60%;
+   font-size: 1.4rem;
+}
+.content h2 {
+   color: var(--Cyan);
+   font-size: 1.2rem;
+   padding: 2rem 11rem 2rem 0;
+}
+.content .time {
+   color: var(--Softblue);
+   opacity: 80%;
+}
+.content hr {
+   opacity: 10%;
+}
+.content .image-avatar {
+   width: 10%;
+   border: var(--White);
+   border: 1px white solid;
+   border-radius: 100%;
+   margin-top: 1.5rem;
+}
+.content .Creation {
+   position: relative;
+   bottom: 1rem;
+   left: 1rem;
+}
+.credit {
+   text-align: center;
+   display: inline-block;
+   position: relative;
+   bottom: 1rem;
+   left: 1rem;
+   color: var(--Softblue);
+   font-size: 1.2rem;
+}
+.credit span {
+   color: var(--White);
+}
